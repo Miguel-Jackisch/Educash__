@@ -1,0 +1,159 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Topbar */
+.topbar {
+  background: linear-gradient(75deg, #fe7cc1 0%, #00bfff 20%, #20f069 45%);
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.topbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav a {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  transition: background-color 0.3s;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+.btn-small {
+  background-color: white;
+  color: #20f069;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-small:hover {
+  background-color: #eee;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+
+/* Seção de Introdução */
+.intro {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: left;
+}
+
+.intro h1 {
+  font-size: 2.2rem;
+  color: #20b963;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.intro strong {
+  color: #00bfff;
+}
+
+/* Estilo para vídeo na página de pitch */
+video {
+  max-width: 800px;
+  width: 100%;
+  height: 450px;
+  margin: 2rem auto;
+  display: block;
+}
+
+/* Ajuste de alinhamento para títulos e listas dentro da introdução */
+.intro h2,
+.intro ul,
+.intro li {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro h2 {
+  color: #20b963;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.intro ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.2rem;
+}
+
+.intro li {
+  text-align: justify;
+  margin-bottom: 0.8rem;
+  list-style-type: disc;
+}
