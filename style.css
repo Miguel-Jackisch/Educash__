@@ -157,3 +157,38 @@ video {
   margin-bottom: 0.8rem;
   list-style-type: disc;
 }
+
+.integrantes-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.integrante {
+  text-align: center;
+}
+
+.integrante img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #20b963;
+}
+
+.integrante p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+}
